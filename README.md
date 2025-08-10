@@ -1,4 +1,4 @@
-# IELTS Writing Stopwatch
+# IELTS Writing Timer
 
 A PyQt6-based desktop application designed to help IELTS test takers manage their time effectively during writing tasks. The application provides structured timing phases for both Task 1 and Task 2, helping users practice proper time allocation for each section of the IELTS Writing test.
 
@@ -7,7 +7,7 @@ A PyQt6-based desktop application designed to help IELTS test takers manage thei
 - **Dual Task Support**: Separate timing structures for IELTS Writing Task 1 (20 minutes) and Task 2 (40 minutes)
 - **Phase-Based Timing**: Each task is broken down into specific phases with recommended time allocations
 - **Visual Feedback**: Clear display of current phase, elapsed time, and remaining time
-- **Stopwatch Controls**: Start, pause, resume, and reset functionality
+- **Timer Controls**: Start, pause, resume, and reset functionality
 - **Audio Notification**: Sound alert when time is complete
 
 ## Task Structure
@@ -41,7 +41,7 @@ A PyQt6-based desktop application designed to help IELTS test takers manage thei
 1. **Clone or download the application files**:
    ```bash
    git clone <repository-url>
-   cd ielts-writing-stopwatch
+   cd IELTS-Writing-Timer
    ```
 
 2. **Install required dependencies**:
@@ -60,30 +60,30 @@ A PyQt6-based desktop application designed to help IELTS test takers manage thei
 python GUI.py
 ```
 
-### Using the Stopwatch
+### Using the Timer
 
 1. **Select Task Type**: Choose between Task 1 (20 min) or Task 2 (40 min) using the radio buttons
-2. **Start Stopwatch**: Click the "Start" button to begin timing
+2. **Start Timer**: Click the "Start" button to begin timing
 3. **Monitor Progress**: 
    - Current phase and its duration are displayed at the top
    - Elapsed time is shown in the center
    - Remaining time is displayed at the bottom
-4. **Control Stopwatch**:
-   - **Pause**: Click "Pause" to temporarily stop the stopwatch
+4. **Control Timer**:
+   - **Pause**: Click "Pause" to temporarily stop the Timer
    - **Resume**: Click "Resume" to continue from where you paused
    - **Reset**: Click "Reset" to return to the initial state
 
-### Stopwatch States
+### Timer States
 
 - **Initial**: Ready to start, task selection available
-- **Running**: Stopwatch is active, shows current phase and remaining time
-- **Paused**: Stopwatch is temporarily stopped, can be resumed
+- **Running**: Timer is active, shows current phase and remaining time
+- **Paused**: Timer is temporarily stopped, can be resumed
 - **Finished**: All phases completed, audio notification played
 
 ## File Structure
 
 ```
-ielts-writing-stopwatch/
+IELTS-Writing-Timer/
 ├── GUI.py              # Main application file
 ├── resources.py        # Compiled Qt resource file
 ├── styles.qss          # Application stylesheet
@@ -162,7 +162,7 @@ The application follows object-oriented principles with clear separation of conc
 
 - **TimerState**: Enum for managing application states
 - **WritingPhase**: Data class for phase information
-- **IELTSStopwatch**: Main widget class with signal-slot architecture
+- **IELTSTimer**: Main widget class with signal-slot architecture
 
 ### Key Components
 - State management using enums

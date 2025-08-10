@@ -35,9 +35,9 @@ class WritingPhase:
         self.duration_minutes = duration_minutes
 
 
-class IELTSStopwatch(QWidget):
+class IELTSTimer(QWidget):
     """
-    Enhanced IELTS Writing Stopwatch with better structure and features.
+    Enhanced IELTS Writing timer with better structure and features.
     """
 
     # Signals for better decoupling
@@ -86,7 +86,7 @@ class IELTSStopwatch(QWidget):
 
     def _setup_ui(self):
         """Initialize the user interface."""
-        self.setWindowTitle("IELTS Writing Stopwatch")
+        self.setWindowTitle("IELTS Writing timer")
         self.setFixedSize(450, 450)
 
         # Main layout
@@ -188,7 +188,7 @@ class IELTSStopwatch(QWidget):
             print("Warning: Could not open styles.qss")
 
     def _reset_to_initial_state(self):
-        """Reset the stopwatch to initial state."""
+        """Reset the timer to initial state."""
         self.timer.stop()
         self.elapsed_seconds = 0
         self.current_phase = 0
@@ -381,10 +381,10 @@ class IELTSStopwatch(QWidget):
 def main():
     """Main entry point."""
     app = QApplication(sys.argv)
-    app.setApplicationName("IELTS Writing Stopwatch")
+    app.setApplicationName("IELTS Writing Timer")
     app.setWindowIcon(QIcon(":/icon.ico"))
 
-    window = IELTSStopwatch()
+    window = IELTSTimer()
     window.show()
 
     sys.exit(app.exec())
