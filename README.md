@@ -86,9 +86,10 @@ python GUI.py
 IELTS-Writing-Timer/
 ├── GUI.py              # Main application file
 ├── resources.py        # Compiled Qt resource file
+├── resources.qrc       # XML file containing the resources (not used in the app, only for reference)
 ├── styles.qss          # Application stylesheet
-├── icon.ico           # Application icon
-└── README.md          # This file
+├── icon.ico            # Application icon
+└── README.md           # This file
 ```
 
 ## Features in Detail
