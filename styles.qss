@@ -1,0 +1,76 @@
+QRadioButton {
+    font-size: 12px;
+}
+
+/* Labels */
+#modeLabel {
+    font-size: 12px;
+}
+
+#phaseLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+}
+
+#durationLabel {
+    font-size: 10px;
+    color: #444;
+}
+
+#timeLabel {
+    font-size: 64px;
+    font-family: monospace;
+    color: #2c3e50;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+/* Buttons */
+#startButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+#startButton:hover {
+    background-color: #45a049;
+}
+
+#pauseButton {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+#pauseButton:hover {
+    background-color: #e68900;
+}
+
+#resetButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+#resetButton:hover {
+    background-color: #da190b;
+}
+
+#startButton:disabled,
+#resetButton:disabled, 
+#pauseButton:disabled {
+    background-color: #d3d3d3;
+    color: #b7b7b7;
+}
